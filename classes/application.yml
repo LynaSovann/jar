@@ -1,0 +1,31 @@
+spring:
+  application:
+    name:
+      oneday-challenge
+
+  datasource:
+    url: jdbc:postgresql://96.9.81.189:6433/group3db
+    username: group3
+    password: kite@82Run
+
+server:
+  port: 9090
+
+#broker:
+#  relay:
+#    host: 90
+#    password: ${BROKER_PASSWORD}
+#    user: ${BROKER_USER}
+
+jwt:
+  secret: FVPr6Q/fVlHGZkElZubC0Zaxv657dPUfDQ4o9DADjSin7+uST1d2A5klMWrMK8fmSl3doyf2wn5zj56VC+qqCg==
+  expiration: 3600000
+
+minio:
+  url: http://localhost:9000
+  access-key: KXQAZAyIlGglTpVuRdS9
+  secret-key: aAvMucEFOn4xFDWPWmyx8X3exxEM1eDPf0JF0lZg
+  bucket-name: bucket-image
+
+  spring.servlet.multipart.max-file-size: 5MB
+  spring.servlet.multipart.max-request-size: 5MB
